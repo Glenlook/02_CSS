@@ -1,0 +1,195 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div, span, header, footer, section { border: 1px solid black; }
+
+@font-face {
+  font-family: 'TheJamsil5Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PartialSansKR-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+}
+
+header{
+  height: 550px;
+}
+
+.header-1{
+  height: 100px;
+  flex-direction: row;
+  display: flex;
+  align-items: stretch;
+  font-family: 'TheJamsil5Bold';
+}
+.header-3{
+  height: 450px;
+  font-family: 'PartialSansKR-Regular';
+  font-size: 8.5vw;
+  background-color: rosybrown;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+
+.head-1{ width: 150px; }
+.head-2{ flex-grow: 1; }
+.head-3{ width: 300px; }
+
+.head-1 > img{
+  width: 100%;
+  height: 100%;
+}
+
+.head-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.head-2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.head-2 > img{
+  width: 100%;
+}
+
+.h-1{
+  height: 47px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background-color: black;
+  color : white;
+}
+
+.h-2{
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  background-color: black;
+  color : white;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  font-family: 'TheJamsil5Bold';
+}
+
+.main-1{
+  height: 200px;
+  background-color: yellow;
+}
+.main-2{
+  height: 200px;
+  background-color: yellow;
+}
+.wind{
+  height: 100%;
+  width: 30%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.win{
+  height: 100%;
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.main-3{
+  height: 400px;
+  background-color: yellowgreen;
+}
+
+.main-4{
+  height: 350px;
+  margin: 25px;
+  background-color: pink;
+}
+
+.flex{ display: flex; }
+.wrap{ flex-wrap: wrap; }
+
+.window{
+  width: 25%;
+  height: 50%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+footer{
+  height: 100px;
+  background-color: gray;
+}
+
+.footer-1{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  font-size: 4vw;
+  height: 100%;
+  font-family: 'TheJamsil5Bold';
+}
+
+.fixed-container{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: darkgoldenrod;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.fixed-container > a{
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  line-height: 38px;
+  user-select: none;
+  border-radius: 50%;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.sticky{
+  position: sticky;
+  top: 0px;
+    z-index: 100;
+}
